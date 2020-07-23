@@ -3,13 +3,16 @@ package junit5.tdd;
 
 public class FizzBuzzWhizz {
     public String play(int number) {
-        String result= "";
+        String result = "";
         if (number % 3 == 0) {
-            result+="fizz";
+            result += "fizz";
 
         }
-        if(result==""){
-            result= String.valueOf(number);
+        if (number % 5 == 0) {
+            result += "buzz";
+        }
+        if (result == "") {
+            result = String.valueOf(number);
         }
         return result;
     }
