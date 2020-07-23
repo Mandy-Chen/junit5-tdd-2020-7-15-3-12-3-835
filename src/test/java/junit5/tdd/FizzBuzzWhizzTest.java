@@ -61,4 +61,15 @@ public class FizzBuzzWhizzTest {
         //then
         assertThat(actual,is("fizzbuzz"));
     }
+
+    @Test
+    void should_return_fizzwhizz_play_fizz_buzz_whizz_given_21() {
+        //given
+        int number=21;
+        //when
+        FizzBuzzWhizz fizzBuzzWhizz=new FizzBuzzWhizz();
+        String actual=fizzBuzzWhizz.play(number);
+        //then
+        assertThat(actual,is("fizzwhizz"));
+    }
 }
