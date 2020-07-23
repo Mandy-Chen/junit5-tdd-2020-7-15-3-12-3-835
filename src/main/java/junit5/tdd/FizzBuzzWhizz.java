@@ -11,6 +11,9 @@ public class FizzBuzzWhizz {
         if (number % 5 == 0) {
             result += "buzz";
         }
+        if (number % 7 == 0) {
+            result += "whizz";
+        }
         if (result == "") {
             result = String.valueOf(number);
         }
