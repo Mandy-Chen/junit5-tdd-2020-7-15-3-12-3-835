@@ -28,4 +28,15 @@ public class FizzBuzzWhizzTest {
         //then
         assertThat(actual,is("fizz"));
     }
+
+    @Test
+    void should_return_buzz_when_play_fizz_buzz_whizz_given_5() {
+        //given
+        int number=5;
+        //when
+        FizzBuzzWhizz fizzBuzzWhizz=new FizzBuzzWhizz();
+        String actual=fizzBuzzWhizz.play(number);
+        //then
+        assertThat(actual,is("buzz"));
+    }
 }
